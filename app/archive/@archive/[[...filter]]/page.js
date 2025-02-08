@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function ArchiveFilterPage({ params }) {
   const filter = params.filter;
-  console.log(filter);
+
   const selectedYear = filter?.[0];
   const selectedMonth = filter?.[1];
 
