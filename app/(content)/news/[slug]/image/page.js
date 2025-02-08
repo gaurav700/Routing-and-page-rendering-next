@@ -6,7 +6,6 @@ export default function ImagePage({ params }) {
   const newsItem = DUMMY_NEWS.find(
     (newsItem) => newsItem.slug === newsItemSlug
   );
-
   if (!newsItem) {
     notFound();
   }
