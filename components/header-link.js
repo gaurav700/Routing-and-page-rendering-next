@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function HeaderLink({linkName}) {
+export default function HeaderLink({linkName, children}) {
     const path = usePathname();
   return (
     <li>
@@ -10,7 +10,7 @@ export default function HeaderLink({linkName}) {
         href={linkName}
         className={path.startsWith(linkName) ? "active" : undefined}
       >
-        {linkName.slice(1)}
+        {children}
       </Link>
     </li>
   );
